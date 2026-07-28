@@ -1,4 +1,4 @@
-member = int(input ("enter the number of members "))
+member = int(input("enter the number of member:"))
 books_barrow= [] * member
 total_no = 0 
 zero_byer = 0 
@@ -35,6 +35,8 @@ for i in range (1,member):
     if books_barrow[i]< lowest:
         lowest= books_barrow[i]
 
+print("the higest buyer is :", highest)
+print("the lowest buyer is :", lowest)
 
 
 for i in books_barrow:
