@@ -19,7 +19,6 @@ for i in range(len(list)):
 
 low = 0
 high = len(list) - 1
-#mid = (low + high)/ 2 
 found = False
 
 while low <= high:
