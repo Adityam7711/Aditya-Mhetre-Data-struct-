@@ -2,21 +2,22 @@
 list = [100, 102 ,103 ,106,108,109,110,111,113,114]
 custId = int(input("enter the cust Id:"))
 
-
+found = False
 #=================================== Liner sarch =======================================
-
+print("Linear sarch:")
 for i in range(len(list)):
     if(list[i]==custId):
         print("id matched")
         print(list[i])
+        found = True
         break
-    else:
-        print("id not matched ")
+if( not found):
+    print("id not matched ")
         
-    i+=1
+    
 
 #=================================== Binary sarch =======================================
-
+print("binary Sarch")
 low = 0
 high = len(list) - 1
 found = False
@@ -37,6 +38,9 @@ while low <= high:
     
 if not found:
     print("element not found:")
+
+
+
 
 
 
